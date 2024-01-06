@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+
+    background-image: url(bg.jpg);
+    
+    height: 100vh;
+    width: 100vw;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    overflow: hidden;
+
+
+}
+
+
+main h1{
+    text-decoration:none;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: rgb(247, 247, 247);
+    padding: 10px;
+    padding-top: 60px;
+    display: inline block;
+}
+
+#wow{
+
+   
+
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    z-index: 90;
+
+    
+    
+    
+
+
+
+}
+
+@keyframes ONE{
+    
+    
+    0%{transform: translate(1000px , -200px) ; z-index: 89;}
+    40%{transform:rotate(100deg) ; z-index: 88}
+    80%{transform: translate( 1200px , 100px); z-index: 95;}
+    100%{transform: translate(-1200px, -100px); z-index: 88;}
+
+
+}
+
+.one{
+    background-image: url(one.gif);
+    height: 200px;
+    width: 200px;
+
+    position:absolute;
+    transform: translate(10px,200px);
+    animation: ONE 20s infinite;
+
+}
+
+
+.two{
+    background-image: url(two.gif);
+    height: 100px;
+    width: 100px;
+    transform:scaleX(0.1);
+    transform:scaleY(4);
+
+    animation: two 1s infinite;
+}
+
+@keyframes two{
+
+    0%{transform: translate(2400px, -400px); z-index: 89;}
+    50% {transform: translate(-2400px, 800px);}
+    100% {transform: translate(2400px, -400px); z-index: 93;}
+
+    
+}
+
+.three{
+    
+    background-image: url(three.gif);
+    height: 100px;
+    width: 100px;
+    transform: rotate(-200deg);
+    animation: three 5s ease-in-out infinite;
+}
+
+@keyframes three{
+    0%{transform: scale(0.01); z-index: 88;}
+    50%{transform: translate(500px, 1000px); z-index:80;}
+    100% {transform: scale(1,10); z-index: 88;}
+
+}
+
+
+
+.four{
+    background-image: url(four.gif);
+    height: 100px;
+    width: 100px;
+    transform: rotate(180deg);
+
+    animation: four  infinite 10s ;
+    
+
+}
+
+@keyframes four{
+ 
+    0%{transform: rotate(-180deg);z-index: 88;}
+    
+    100%{transform: scale(1, 50 ); z-index: 88;}
+
+    
+}
